@@ -1,0 +1,14 @@
+/Users/tyko/RiderProjects/Laboration_4/Laboration_4/bin/Debug/net9.0/Laboration_4
+/Users/tyko/RiderProjects/Laboration_4/Laboration_4/bin/Debug/net9.0/Laboration_4.deps.json
+/Users/tyko/RiderProjects/Laboration_4/Laboration_4/bin/Debug/net9.0/Laboration_4.runtimeconfig.json
+/Users/tyko/RiderProjects/Laboration_4/Laboration_4/bin/Debug/net9.0/Laboration_4.dll
+/Users/tyko/RiderProjects/Laboration_4/Laboration_4/bin/Debug/net9.0/Laboration_4.pdb
+/Users/tyko/RiderProjects/Laboration_4/Laboration_4/obj/Debug/net9.0/Laboration_4.GeneratedMSBuildEditorConfig.editorconfig
+/Users/tyko/RiderProjects/Laboration_4/Laboration_4/obj/Debug/net9.0/Laboration_4.AssemblyInfoInputs.cache
+/Users/tyko/RiderProjects/Laboration_4/Laboration_4/obj/Debug/net9.0/Laboration_4.AssemblyInfo.cs
+/Users/tyko/RiderProjects/Laboration_4/Laboration_4/obj/Debug/net9.0/Laboration_4.csproj.CoreCompileInputs.cache
+/Users/tyko/RiderProjects/Laboration_4/Laboration_4/obj/Debug/net9.0/Laboration_4.dll
+/Users/tyko/RiderProjects/Laboration_4/Laboration_4/obj/Debug/net9.0/refint/Laboration_4.dll
+/Users/tyko/RiderProjects/Laboration_4/Laboration_4/obj/Debug/net9.0/Laboration_4.pdb
+/Users/tyko/RiderProjects/Laboration_4/Laboration_4/obj/Debug/net9.0/Laboration_4.genruntimeconfig.cache
+/Users/tyko/RiderProjects/Laboration_4/Laboration_4/obj/Debug/net9.0/ref/Laboration_4.dll
