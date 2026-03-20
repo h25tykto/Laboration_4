@@ -12,3 +12,4 @@
 /Users/tyko/RiderProjects/Laboration_4/Laboration_4/obj/Debug/net9.0/Laboration_4.pdb
 /Users/tyko/RiderProjects/Laboration_4/Laboration_4/obj/Debug/net9.0/Laboration_4.genruntimeconfig.cache
 /Users/tyko/RiderProjects/Laboration_4/Laboration_4/obj/Debug/net9.0/ref/Laboration_4.dll
+/Users/tyko/RiderProjects/Laboration_4/Laboration_4/obj/Debug/net9.0/Laboration_4.sourcelink.json
