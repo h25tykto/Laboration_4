@@ -14,6 +14,7 @@ public static class PeopleFunctions
         string lastName = string.Empty;
         Gender gender = Gender.Other;
         Hair hair = new Hair();
+        string eyeColor = string.Empty;
         
         Console.Clear();
         
@@ -117,6 +118,47 @@ public static class PeopleFunctions
         }
         
         Console.Clear();
+        
+         validChoice = false;
+        
+        while (!validChoice)
+        {
+            Console.Write("Ange personens hårlängd; \n1: Kort \n2: Medium \n3: Långt");
+            Console.WriteLine();
+            
+            try
+            {
+                int choiceOfHairLenght = Convert.ToInt32(Console.ReadLine());
+                switch (choiceOfHairLenght)
+                {
+                    case 1:
+                        hair.Lenght = "Kort";
+                        validChoice = true;
+                        break;
+                    case 2:
+                        hair.Lenght = "Medium";
+                        validChoice = true;
+                        break;
+                    case 3:
+                        hair.Lenght = "Långt";
+                        validChoice = true;
+                        break;
+                    default:
+                        validChoice = false;
+                        Console.Clear();
+                        Console.WriteLine("Ange ett nummer 1-3 tack!");
+                        continue;
+                }
+            }
+            catch (FormatException)
+            {
+                Console.Clear();
+                Console.WriteLine("Ange ett nummer 1-3 tack!");
+            }
+        }
+        
+        Console.Clear();
+        
         validChoice = false;
         
         while (!validChoice)
@@ -139,6 +181,46 @@ public static class PeopleFunctions
                         break;
                     case 3:
                         hair.Lenght = "Långt";
+                        validChoice = true;
+                        break;
+                    default:
+                        validChoice = false;
+                        Console.Clear();
+                        Console.WriteLine("Ange ett nummer 1-3 tack!");
+                        continue;
+                }
+            }
+            catch (FormatException)
+            {
+                Console.Clear();
+                Console.WriteLine("Ange ett nummer 1-3 tack!");
+            }
+        }
+        
+        Console.Clear();
+        
+        validChoice = false;
+        
+        while (!validChoice)
+        {
+            Console.Write("Ange personens ögonfärg; \n1: Brun \n2: Blå \n3: Grön");
+            Console.WriteLine();
+            
+            try
+            {
+                int choiceOfHairLenght = Convert.ToInt32(Console.ReadLine());
+                switch (choiceOfHairLenght)
+                {
+                    case 1:
+                        eyeColor = "Brun";
+                        validChoice = true;
+                        break;
+                    case 2:
+                        eyeColor = "Blå";
+                        validChoice = true;
+                        break;
+                    case 3:
+                        eyeColor = "Grön";
                         validChoice = true;
                         break;
                     default:
@@ -184,10 +266,10 @@ public static class PeopleFunctions
         
         Console.Clear();
         
-        Person person = new Person(hair, gender, birthDate, firstName, lastName);
+        Person person = new Person(hair, gender, birthDate, firstName, lastName, eyeColor);
         
         Console.Clear();
-        Console.WriteLine("Personen tillagd: {0} {1} \nKön: {2} \nHår: {3}, {4}\nFödelsedatum: {5}\n", person.FirstName, person.LastName, person.Gender, person.Hair.Color, person.Hair.Lenght, person.DateOfBirth);
+        Console.WriteLine("Personen tillagd: {0} {1} \nKön: {2} \nHår: {3}, {4}\nFödelsedatum: {5}\n", person.FirstName, person.LastName, person.Gender, person.Hair.Color, person.Hair.Lenght, person.DateOfBirth,  person.EyeColor);
         Console.WriteLine("Tryck på enter för att gå vidare");
         Console.ReadLine();
 
@@ -207,7 +289,7 @@ public static class PeopleFunctions
             Console.WriteLine("Dessa personer finns med på listan:");
             foreach (Person person in peopleList)
             {
-                Console.WriteLine(person.FirstName + " " + person.LastName + " | Kön: " + person.Gender + " | Född: " + person.DateOfBirth + " | Hår: " + person.Hair.Lenght + ", " + person.Hair.Color);
+                Console.WriteLine(person.ToString());
                 Console.WriteLine();
             }
         }

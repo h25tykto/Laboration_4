@@ -8,13 +8,14 @@ class Program
     {
         List<Person> peopleList = new List<Person>();
 
-        Person examplePerson = new Person(new Hair("svart","långt"), Gender.Female, DateTime.ParseExact("19990329", "yyyymmdd", CultureInfo.InvariantCulture), "Ellen", "Lindström");
+        Person examplePerson = new Person(new Hair("svart","långt"), Gender.Female, DateTime.ParseExact("19990329", "yyyymmdd", CultureInfo.InvariantCulture), "Ellen", "Lindström", "Brun");
         //peopleList.Add(examplePerson); Kommenterade ut detta för att visa att programmet reagerar när det saknas personer på listan
         
         bool runProgram = true;
-        bool loopAddPeople = true;
+        
         while (runProgram)
         {
+            bool loopAddPeople = true;
             Console.Clear();
             Console.WriteLine("**********************************");
             Console.WriteLine("Välj alternativ:\n \n1: Lägg till ny person \n \n2: Se tillagda personer \n \n3: Avsluta programmet");
